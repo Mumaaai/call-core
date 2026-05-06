@@ -1,0 +1,19 @@
+{
+  "name": "call-core-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:apps\" \"npm run dev:docs\"",
+    "dev:apps": "npm run dev --workspaces --if-present",
+    "dev:docs": "npm run dev --prefix docs",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

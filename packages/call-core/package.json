@@ -1,0 +1,12 @@
+{
+  "name": "call-core",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "livekit-client": "^2.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
